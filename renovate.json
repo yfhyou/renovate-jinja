@@ -14,7 +14,9 @@
     {
       "customType": "regex",
       "fileMatch": "(^|/)(?:docker-)?compose[^/]*\\.ya?ml\\.j2$",
-      "matchStrings": ["(?:image: )(?<depName>.*?)(?::(release)?(testing)?)-?(?<currentValue>.*?)(?:@(?<currentDigest>sha256:[a-f0-9]+))?\\n"],
+      "matchStrings": [
+        "(?:image: )(?<depName>.*?)(?::(release)?(testing)?)-?(?<currentValue>.*?)(?:@(?<currentDigest>sha256:[a-f0-9]+))?\\n"
+      ],
       "datasourceTemplate": "docker",
       "versioningTemplate": "loose"
     }
