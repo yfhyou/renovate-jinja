@@ -1,9 +1,9 @@
 services:
   traefik:
-    image: traefik:v3.2.1@sha256:1a3e33f976d10f45efd613aa64814867068bf51c782599a70ef370447686291b
+    image: traefik:v3.3.0-rc2-windowsservercore-ltsc2022@sha256:ec1dd5c3e108a569c19f8d1c87747e327e3e87b88ad10d6a45b2be1cd5ce2766
 
   homepage:
-    image: litetex/ghcr.gethomepage.homepage:v0.9.13
+    image: litetex/ghcr.gethomepage.homepage:v0.10.6
 
   sabnzbd:
     image: hotio/sabnzbd:release-4.3.3
@@ -12,7 +12,7 @@ services:
     image: hotio/readarr:testing-0.4.2.2653
 
   audiobookshelf:
-    image: advplyr/audiobookshelf:2.17.2
+    image: advplyr/audiobookshelf:2.17.6
 
   jackett:
     image: hotio/jackett:release-0.22.856
